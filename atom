@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" type="image/favicon-icon" href="/img/favicon.io" sizes="32x32/>
+</head>
+<body>
+
+<div class="mydiv">
+  <h1>"Hello World!"</h1>
+</div>
+
+<div class="mydiv2">
+  <h2>My name is Rabia Turkyilmaz</h2>
+
+  <p>I am a newbie web developer from Finland.</p>
+  <img src="https://media-exp1.licdn.com/dms/image/D4D03AQEomXk4npMsGg/profile-displayphoto-shrink_800_800/0/1629763365509?e=1643846400&v=beta&t=gJJ3MDNtzU2jCj1R0Gqh_bKMFRXXYYiA1svrlHQkoU4" width="200" height="180" alt="https://media-exp1.licdn.com/dms/image/D4D03AQEomXk4npMsGg/profile-displayphoto-shrink_800_800/0/1629763365509?e=1643846400&v=beta&t=gJJ3MDNtzU2jCj1R0Gqh_bKMFRXXYYiA1svrlHQkoU4"/>
+
+  <p><a href=https://www.linkedin.com/in/rabia-turkyilmaz/>Click here find my on Linkedn!</a></p>
+
+<div class="mydiv3">
+  <h3> Contact me on:</h3>
+    <p>rabia.esya@gmail.com</p>
+    <P>adress: Koivu-Mankkaan tie, Finland </p>
+</div>
+</body>
+</html>

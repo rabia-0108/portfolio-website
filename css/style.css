@@ -1,0 +1,281 @@
+/*
+Colors used
+
+background (Light dim blue): # A5CCC3;
+Text Color (dark blue-green): #041511;
+Primary Color (Dark Slate Grey): #2F4F4F;
+Secondary Color (Light Dim green): #151F1D;
+Grid Palate light color: #f0ece2
+Grid Palate Darker Color: #dfd3c3
+Grid Palaate even darker but not in the code: #c7b198
+Grid Palate shady Green: #596e79
+
+ */
+
+ :root {
+--background: #A5CCC3;
+--Text-Color: #041511;
+--Primary-Color: #2F4F4F;
+--Secondary-Color: #151F1D;
+--Grid-Palate-1: #f0ece2;
+--Grid-Palate-2: #dfd3c3;
+--Grid-Palate-3: #c7b198;
+--Grid-Palate-4: #596e79;
+--font-weight-h: 700;
+--font-weight-regular-text: 400;
+}
+
+body {
+  font-family: 'David Libre', Georgia;
+  font-weight: var(--font-weight-regular-text);
+  font-size: 16px;
+  line-height: 1.6;
+  }
+
+h1{
+font-size: 30px;
+font-weight: var(--font-weight-h);
+}
+
+h2{
+font-size: 24px;
+font-weight: var(--font-weight-h);
+}
+
+h3{
+font-size: 18px;
+font-weight: var(--font-weight-h);
+}
+
+a{
+color: var(--primary-color);
+}
+
+
+button:visited {
+  /* visited link */
+  color: var(--secondary-color);
+}
+button:active {
+  /* selected link */
+  color: var(--primary-color);
+}
+input, texture, select, button {
+  font-family: system-ui;
+}
+
+.button, button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 8px;
+  border-radius: 2px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* No underlining when hovering over a link */
+text-decoration: none;
+/* lets the mouse appear as a hand when hovering over the button */
+ cursor: pointer;
+ /* reduces the opacity of the button to 80% */
+ opacity: 0.8;
+}
+
+.button__secondary {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+
+.mydiv4 a {/* element selector */
+  color: red;
+}
+
+.mydiv4 #my-link {/* id selector */
+  color: green;
+}
+
+.mydiv4 .my-link {/* class selector */
+  color: blue;
+}
+
+
+.profile__portrait{
+  margin-right: 45px;
+  float: left;
+  width: 370px;
+  height: auto;
+  border-radius: 35%
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.profile {
+  width: 1200px;
+
+  width: 80%;
+
+  min-width: 370px;
+  max-width: 1200px;
+
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.profile__text {
+    flex: 1 1 100px;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li{
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 420px 420px 420px;
+  grid-gap: 5px;
+}
+
+.grid__item1 {
+  background-color: var(--Grid-Palate-1) #f0ece2;
+}
+
+.grid__item2 {
+  background-color: var(--Grid-Palate-2) #dfd3c3;
+}
+
+.grid__item3 {
+  background-color: var(--Grid-Palate-1) #f0ece2;
+}
+
+.grid__item4 {
+  background-color: var(--Grid-Palate-2) #dfd3c3;
+}
+
+.grid__item5 {
+  background-color: var(--Grid-Palate-1) #f0ece2;
+}
+
+.grid__item6 {
+  background-color: var(--Grid-Palate-2) #dfd3c3;
+}
+
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+
+@keyframes color-change {
+  0% {
+  fill: var(--Sun-0);
+  }
+  50% {
+    fill: var(--Sun-50);
+  }
+  100% {
+    fill: var(--Sun-100);
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 15s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
