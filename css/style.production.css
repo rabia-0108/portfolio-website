@@ -48,11 +48,11 @@ color: undefined;
 
 button:visited {
   /* visited link */
-  color: undefined;
+  color: #151F1D;
 }
 button:active {
   /* selected link */
-  color: undefined;
+  color: #2F4F4F;
 }
 input, texture, select, button {
   font-family: system-ui;
@@ -65,31 +65,8 @@ input, texture, select, button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: undefined;
-  color: undefined;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 8px;
-  border-radius: 2px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: undefined;
-  color: undefined;
+  background-color: #A5CCC3;
+  color: #041511;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 8px;
@@ -115,12 +92,6 @@ text-decoration: none;
  /* reduces the opacity of the button to 80% */
  opacity: 0.8;
 }
-
-.button__secondary {
-  background-color: undefined;
-  color: undefined;
-}
-
 
 .mydiv4 a {/* element selector */
   color: red;
@@ -282,13 +253,13 @@ text-decoration: none;
 
 @keyframes color-change {
   0% {
-  fill: undefined;
+  fill: #EDC655;
   }
   50% {
-    fill: undefined;
+    fill: #FCFFAD;
   }
   100% {
-    fill: undefined;
+    fill: #F76414;
   }
 }
 
@@ -316,16 +287,6 @@ text-decoration: none;
   }
 }
 
-@keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
-  }
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
-}
 
 .cloud-front {
   -webkit-animation-duration: 15s;
@@ -340,16 +301,6 @@ text-decoration: none;
           animation-timing-function: linear;
 }
 
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
-  }
-  to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
-  }
-}
 
 @keyframes cloud-move-reverse {
   from {
