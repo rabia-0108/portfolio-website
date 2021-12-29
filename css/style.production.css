@@ -50,9 +50,14 @@ background-color: #A5CCC3;
 color: #2F4F4F;
 }
 
-.grid a {
-  background-color:#4d3827;
-  color: #2F4F4F;
+.grid .grid-item1 .grid-item3 .grid-item5 a {
+  background-color: #f0ece2;
+  color: #4d3827;
+}
+
+.grid .grid-item2 .grid-item4 .grid-item6 a {
+  background-color: #dfd3c3;
+  color: #4d3827;
 }
 
 
