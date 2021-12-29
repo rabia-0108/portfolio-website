@@ -1,0 +1,2 @@
+There were no errors that came up during the cross-browser testing. 
+The only thing is that with the GitHub hoster link, the website logo is not visible.

@@ -1,0 +1,5 @@
+As for the linters, I managed to get W3C validator to work for both CSS and HTML files.
+Although I also installed the others that were recommended; 
+linter-htmlhint Atom plugin
+linter-tidy Atom plugin
+linter-stylelint Atom plugin. 

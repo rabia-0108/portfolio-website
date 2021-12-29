@@ -29,7 +29,7 @@ Grid Palate shady Green: #596e79
 }
 
 body {
-  font-family: 'David Libre', Georgia;
+  font-family: 'David Libre', Georgia, sans-serif;
   font-weight: var(--font-weight-regular-text);
   font-size: 16px;
   line-height: 1.6;
@@ -57,10 +57,12 @@ color: var(--primary-color);
 
 button:visited {
   /* visited link */
+background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 button:active {
   /* selected link */
+  background-color: var(--background);
   color: var(--primary-color);
 }
 input, texture, select, button {
@@ -74,7 +76,7 @@ input, texture, select, button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--background-color);
+  background-color: var(--background);
   color: var(--text-color);
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
@@ -105,14 +107,17 @@ text-decoration: none;
 
 
 .mydiv4 a {/* element selector */
+  background-color: var(--primary-color);
   color: red;
 }
 
 .mydiv4 #my-link {/* id selector */
+  background-color: var(--primary-color);
   color: green;
 }
 
 .mydiv4 .my-link {/* class selector */
+  background-color: var(--primary-color);
   color: blue;
 }
 
@@ -135,12 +140,7 @@ text-decoration: none;
 
 .profile {
   width: 1200px;
-
-  width: 80%;
-
   min-width: 370px;
-  max-width: 1200px;
-
   max-width: 700px;
   margin: 0 auto;
 }
@@ -185,27 +185,33 @@ text-decoration: none;
 }
 
 .grid__item1 {
-  background-color: var(--Grid-Palate-1) #f0ece2;
+  background-color: var(--Grid-Palate-1);
+  color: #c7b198;
 }
 
 .grid__item2 {
   background-color: var(--Grid-Palate-2);
+  color: #c7b198;
 }
 
 .grid__item3 {
   background-color: var(--Grid-Palate-1);
+  color: #c7b198;
 }
 
 .grid__item4 {
   background-color: var(--Grid-Palate-2);
+  color: #c7b198;
 }
 
 .grid__item5 {
   background-color: var(--Grid-Palate-1);
+  color: #c7b198;
 }
 
 .grid__item6 {
   background-color: var(--Grid-Palate-2);
+  color: #c7b198;
 }
 
 
@@ -226,9 +232,6 @@ text-decoration: none;
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
   }
 }
 

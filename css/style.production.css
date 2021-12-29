@@ -241,13 +241,13 @@ text-decoration: none;
 
 @-webkit-keyframes color-change {
   0% {
-  fill: undefined;
+  fill: #EDC655;
   }
   50% {
-    fill: undefined;
+    fill: #FCFFAD;
   }
   100% {
-    fill: undefined;
+    fill: #F76414;
   }
 }
 
