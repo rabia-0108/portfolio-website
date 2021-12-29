@@ -12,10 +12,11 @@ background (Light dim blue): # A5CCC3;
 Text Color (dark blue-green): #041511;
 Primary Color (Dark Slate Grey): #2F4F4F;
 Secondary Color (Light Dim green): #151F1D;
-Grid Palate light color: #f0ece2
-Grid Palate Darker Color: #dfd3c3
-Grid Palaate even darker but not in the code: #c7b198
-Grid Palate shady Green: #596e79
+Grid Palate light color: #f0ece2;
+Grid Palate Darker Color: #dfd3c3;
+Grid Palaate even darker but not in the code: #c7b198;
+Grid Palate shady Green: #596e79;
+Grid Paate text color: #4d3827;
 
  */
 
@@ -29,20 +30,33 @@ body {
 h1{
 font-size: 30px;
 font-weight: 700;
+color: #041511
 }
 
 h2{
 font-size: 24px;
 font-weight: 700;
+color: #041511
 }
 
 h3{
 font-size: 18px;
 font-weight: 700;
+color: #041511
 }
 
 a{
 color: #2F4F4F;
+}
+
+.grid .grid-item1 .grid-item3 .grid-item5 a {
+  background-color: #f0ece2;
+  color: #4d3827;
+}
+
+.grid .grid-item2 .grid-item4 .grid-item6 a {
+  background-color: #dfd3c3;
+  color: #4d3827;
 }
 
 
@@ -189,32 +203,32 @@ text-decoration: none;
 
 .grid__item1 {
   background-color: #f0ece2;
-  color: #c7b198;
+  color:#4d3827;
 }
 
 .grid__item2 {
   background-color: #dfd3c3;
-  color: #c7b198;
+  color:#4d3827;
 }
 
 .grid__item3 {
   background-color: #f0ece2;
-  color: #c7b198;
+  color:#4d3827;
 }
 
 .grid__item4 {
   background-color: #dfd3c3;
-  color: #c7b198;
+color:#4d3827;
 }
 
 .grid__item5 {
   background-color: #f0ece2;
-  color: #c7b198;
+color:#4d3827;
 }
 
 .grid__item6 {
   background-color: #dfd3c3;
-  color: #c7b198;
+color:#4d3827;
 }
 
 

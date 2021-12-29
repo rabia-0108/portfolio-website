@@ -5,10 +5,11 @@ background (Light dim blue): # A5CCC3;
 Text Color (dark blue-green): #041511;
 Primary Color (Dark Slate Grey): #2F4F4F;
 Secondary Color (Light Dim green): #151F1D;
-Grid Palate light color: #f0ece2
-Grid Palate Darker Color: #dfd3c3
-Grid Palaate even darker but not in the code: #c7b198
-Grid Palate shady Green: #596e79
+Grid Palate light color: #f0ece2;
+Grid Palate Darker Color: #dfd3c3;
+Grid Palaate even darker but not in the code: #c7b198;
+Grid Palate shady Green: #596e79;
+Grid Palate text color: #4d3827;
 
  */
 
@@ -21,6 +22,7 @@ Grid Palate shady Green: #596e79
 --Grid-Palate-2: #dfd3c3;
 --Grid-Palate-3: #c7b198;
 --Grid-Palate-4: #596e79;
+--Grid-Palate-text: #4d3827;
 --font-weight-h: 700;
 --font-weight-regular-text: 400;
 --Sun-0: #EDC655;
@@ -38,20 +40,29 @@ body {
 h1{
 font-size: 30px;
 font-weight: var(--font-weight-h);
+color: #041511
 }
 
 h2{
 font-size: 24px;
 font-weight: var(--font-weight-h);
+color: #041511
 }
 
 h3{
 font-size: 18px;
 font-weight: var(--font-weight-h);
+color: #041511
 }
 
 a{
+background-color: #A5CCC3; 
 color: var(--primary-color);
+}
+
+.grid a {
+  background-color:#4d3827;
+  color: #2F4F4F;
 }
 
 
@@ -186,32 +197,32 @@ text-decoration: none;
 
 .grid__item1 {
   background-color: var(--Grid-Palate-1);
-  color: #c7b198;
+  color: var(--Grid-Palate-text);
 }
 
 .grid__item2 {
   background-color: var(--Grid-Palate-2);
-  color: #c7b198;
+  color: var(--Grid-Palate-text);
 }
 
 .grid__item3 {
   background-color: var(--Grid-Palate-1);
-  color: #c7b198;
+  color: var(--Grid-Palate-text);
 }
 
 .grid__item4 {
   background-color: var(--Grid-Palate-2);
-  color: #c7b198;
+  color: var(--Grid-Palate-text);
 }
 
 .grid__item5 {
   background-color: var(--Grid-Palate-1);
-  color: #c7b198;
+  color: var(--Grid-Palate-text);
 }
 
 .grid__item6 {
   background-color: var(--Grid-Palate-2);
-  color: #c7b198;
+  color: var(--Grid-Palate-text);
 }
 
 
@@ -289,5 +300,4 @@ text-decoration: none;
 .social-media img{
   width:30px;
   height:30px;
-  
 }
