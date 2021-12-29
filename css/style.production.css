@@ -47,6 +47,11 @@ background-color: #A5CCC3;
 color: #2F4F4F;
 }
 
+.grid a {
+  background-color:#4d3827;
+  color: #2F4F4F;
+}
+
 
 button:visited {
   /* visited link */
