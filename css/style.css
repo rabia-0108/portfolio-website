@@ -40,16 +40,19 @@ body {
 h1{
 font-size: 30px;
 font-weight: var(--font-weight-h);
+color: #041511
 }
 
 h2{
 font-size: 24px;
 font-weight: var(--font-weight-h);
+color: #041511
 }
 
 h3{
 font-size: 18px;
 font-weight: var(--font-weight-h);
+color: #041511
 }
 
 a{
