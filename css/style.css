@@ -282,3 +282,9 @@ text-decoration: none;
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.social-media img{
+  width:30px;
+  height:30px;
+  
+}

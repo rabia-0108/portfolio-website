@@ -20,7 +20,7 @@ Grid Palate shady Green: #596e79
  */
 
 body {
-  font-family: 'David Libre', Georgia;
+  font-family: 'David Libre', Georgia, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
@@ -42,16 +42,19 @@ font-weight: 700;
 }
 
 a{
-color: undefined;
+background-color: #A5CCC3; 
+color: #2F4F4F;
 }
 
 
 button:visited {
   /* visited link */
+  background-color: #A5CCC3; 
   color: #151F1D;
 }
 button:active {
   /* selected link */
+background-color: #A5CCC3; 
   color: #2F4F4F;
 }
 input, texture, select, button {
@@ -94,14 +97,17 @@ text-decoration: none;
 }
 
 .mydiv4 a {/* element selector */
+  background-color: #A5CCC3;
   color: red;
 }
 
 .mydiv4 #my-link {/* id selector */
+  background-color: #A5CCC3;
   color: green;
 }
 
 .mydiv4 .my-link {/* class selector */
+  background-color: #A5CCC3;
   color: blue;
 }
 
@@ -129,12 +135,7 @@ text-decoration: none;
 
 .profile {
   width: 1200px;
-
-  width: 80%;
-
   min-width: 370px;
-  max-width: 1200px;
-
   max-width: 700px;
   margin: 0 auto;
 }
@@ -189,26 +190,32 @@ text-decoration: none;
 
 .grid__item1 {
   background-color: #f0ece2;
+  color: #c7b198;
 }
 
 .grid__item2 {
   background-color: #dfd3c3;
+  color: #c7b198;
 }
 
 .grid__item3 {
   background-color: #f0ece2;
+  color: #c7b198;
 }
 
 .grid__item4 {
   background-color: #dfd3c3;
+  color: #c7b198;
 }
 
 .grid__item5 {
   background-color: #f0ece2;
+  color: #c7b198;
 }
 
 .grid__item6 {
   background-color: #dfd3c3;
+  color: #c7b198;
 }
 
 
@@ -225,15 +232,9 @@ text-decoration: none;
   }
 }
 @media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
   }
 }
 
@@ -253,7 +254,7 @@ text-decoration: none;
 
 @keyframes color-change {
   0% {
-  fill: #EDC655;
+    fill: #EDC655;
   }
   50% {
     fill: #FCFFAD;
@@ -262,6 +263,7 @@ text-decoration: none;
     fill: #F76414;
   }
 }
+
 
 .sun {
   -webkit-animation-duration: 4s;
@@ -317,3 +319,10 @@ text-decoration: none;
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
           animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.social-media img{
+  width:30px;
+  height:30px;
+  
+}
+
